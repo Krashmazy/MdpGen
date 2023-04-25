@@ -67,7 +67,7 @@ public class PasswordGeneratorGUI extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         // Récupération de la longueur demandé par l'utilisateur
         String lengthText = lengthField.getText();
-        int passwordLength = 0;
+        int passwordLength;
 
         try {
             passwordLength = Integer.parseInt(lengthText);
